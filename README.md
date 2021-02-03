@@ -1,4 +1,4 @@
-##  Zabbix.org 原始文档
+# Zabbix.org 原始文档
 
 Zabbix.org改版后，让官方改的面目全非，首页上很多有用的信息都丢了，为此我从archive找回了，供需要的人。
 
@@ -14,7 +14,7 @@ Zabbix is an open source monitoring software - Zabbix on Wikipedia. This is Zabb
 
 [Zabbix official_templates](https://www.zabbix.com/cn/integrations?cat=official_templates)
 
-## Tools
+### Tools
 
 [Pootle for translating Zabbix](http://web.archive.org/web/20200920071019/https://www.zabbix.org/pootle/)
 
@@ -30,60 +30,83 @@ Official SVN repo over WebSVN()
 
 [Zapix API web tool](https://github.com/monitoringartist/zapix)
 
-## Community
+### Community
 
-Help logo.png Getting help
-Irc logo.png IRC #zabbix
-Forum logo.png Forum
-Github logo.png Community repos (templates/tools)
-link=https://www.linkedin.com/groups?home=&gid=161448&trk=anet_ug_hm LinkedIn LinkedIn group
-Email logo.png User mailing list
-Usergroup logo.png Local user groups
-Zabbix interest over time
-Zabbix google trend stat.png
-Interest in Zabbix is growing over time.
-You can see worldwide data, 2004 - present.
-Definitely Zabbix is a good choice for you.
+[Getting help](https://www.zabbix.com/cn/community)
 
-Zabbix Summit 2019
-Zabbix Summit 2019
+[IRC #zabbix](https://webchat.freenode.net/?channels=#zabbix)
+
+[Forum](https://www.zabbix.com/forum/)
+
+[Community repos (templates/tools)](https://github.com/zabbix/zabbix-community-repos)
+
+[link group](https://www.linkedin.com/company/2476879/) 
+
+User mailing list
+
+[zabbix announce](https://lists.sourceforge.net/lists/listinfo/zabbix-announce)
+[zabbix users](https://lists.sourceforge.net/lists/listinfo/zabbix-users)
+
 
 ## How to
 
-Installation
-Install on CentOS / RHEL
-Install on openSUSE / SLES
-Install Zabbix 2.0.x on CentOS 6.x / RHEL 6.x with selinux
-Rebuild existing Zabbix RPM packages on RHEL, CentOS, SL, ...
-Zabbix on Raspberry Pi (OS Raspbian)
-Rebuild existing Zabbix DEB packages on Debian, Ubuntu, ...
-Zabbix on DB2
-Install Zabbix with IBM DB2
-Install on FreeNAS
-Install on Synology
-Statically link the Zabbix agent
-Archived How To's
+### Installation
+
+[REQUIREMENTS](https://www.zabbix.com/documentation/current/manual/installation/requirements)
+
+[Install on CentOS/RHEL](https://www.zabbix.com/documentation/current/manual/installation/install_from_packages/rhel_centos)
+
+[Install on Debian/Ubuntu/Raspbian](https://www.zabbix.com/documentation/current/manual/installation/install_from_packages/debian_ubuntu)
+
+[Install on openSUSE/SLES](https://www.zabbix.com/documentation/current/manual/installation/install_from_packages/suse)
+
+[Zabbix on Raspberry Pi (OS Raspbian)](http://web.archive.org/web/20200806125157/https://zabbix.org/wiki/Zabbix_on_the_Raspberry_Pi_(OS_Raspbian))
+
+[Install on From SOURCES](https://www.zabbix.com/documentation/current/manual/installation/install)
+
+[Windows Agent Installation From MSI](https://www.zabbix.com/documentation/current/manual/installation/install_from_packages/win_msi)
+
+[MAC OS  Agent Installation PKG](https://www.zabbix.com/documentation/current/manual/installation/install_from_packages/mac_pkg)
+
+[Rebuild existing Zabbix RPM packages on RHEL, CentOS, ...](rebuild_rpms.md)
+
+[Rebuild existing Zabbix DEB packages on Debian, Ubuntu, ...](http://web.archive.org/web/20200806125157/https://zabbix.org/wiki/Docs/howto/rebuild_debs)
+
+[Zabbix on DB2](http://web.archive.org/web/20181103214227/http://www.zabbix.org/wiki/DB2_Installation_Cookbook)
+
+[Install Zabbix with IBM DB2](http://web.archive.org/web/20181108122932/http://www.zabbix.org/wiki/Docs/howto/Install_Zabbix_with_IBM_DB2)
+
+[Install on FreeNAS](http://web.archive.org/web/20181015193258/http://zabbix.org/wiki/Install_on_FreeNAS)
+
+[Install on Synology](http://web.archive.org/web/20200814111945/https://www.zabbix.org/wiki/InstallOnSynology)
+
+[Statically link the Zabbix agent](Zabbix_Agent_static_linking.md)
 
 ## HA
 
-High availability setup
-High availability setup CentOS 6.x
-HA for faster Frontend with Nginx and Google Pagespeed Module
-HA Using Puppet & puppet forge modules
+[High availability setup](http://web.archive.org/web/20181028005316/http://zabbix.org/wiki/Docs/howto/high_availability)
+
+[High availability setup CentOS 6.x](http://web.archive.org/web/20200806125157/https://zabbix.org/wiki/Docs/howto/high_availability_on_Centos_6.x)
+
+[HA for faster Frontend with Nginx and Google Pagespeed Module](http://web.archive.org/web/20180711070304/http://www.zabbix.org/wiki/Docs/howto/high_availability_Zabbix_Frontend)
+
+[HA Using Puppet & puppet forge modules](http://web.archive.org/web/20200814112849/https://www.zabbix.org/wiki/Docs/howto/high_availability_Puppet_corosync_pacemaker)
 
 ## Database
 
-### Schema
+### [Schema](https://assets.zabbix.com/files/org/Zabbix_db_schema-2.4.3-MySQL.pdf)
 
 ### MySQL
 
-MySQL partitioning (2.x.x)
+[MySQL partitioning (2.x.x)](http://web.archive.org/web/20201111205659/https://zabbix.org/wiki/Docs/howto/mysql_partition)
 
-Docs/howto/MySQL Table Partitioning (variant)
+[Docs/howto/MySQL Table Partitioning (variant)](http://web.archive.org/web/20200806125157/https://zabbix.org/wiki/Docs/howto/MySQL_Table_Partitioning_(variant))
 
-MySQL partitioning with external management script
+[MySQL partitioning with external management script](mysql_partitioning.md)
 
-Script for (configuration) backup
+[Script for (configuration) backup](http://web.archive.org/web/20200814113732/https://www.zabbix.org/wiki/Docs/howto/database_backup_script)
+
+[Zabbix: Partitioning MySQL / MariaDB database Tables in 5 min](https://bestmonitoringtools.com/zabbix-partitioning-tables-on-mysql-database/)
 
 ### PostgreSQL
 
