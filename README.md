@@ -6,7 +6,7 @@ Zabbix is an open source monitoring software - Zabbix on Wikipedia. This is Zabb
 
 ## Templates	
 
-[Searcher](https://monitoringartist.github.io/zabbix-searcher/)
+[Searcher](https://monitoringartist.github.io/zabbix-searcher/?_blank)
 
 [ommunity repos (templates/tools)](https://github.com/monitoringartist/zabbix-community-repos)
 
