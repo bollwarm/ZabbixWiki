@@ -5,10 +5,14 @@ This MySQL partitioning guide was originally prepared by DotNeft.
 Partitioning is performed by logically dividing one large table into small physical fragments. Partitioning may bring several advantages:
 
 In some situations query performance can be significantly increased, especially when the most intensively used table area is a separate partition or a small number of partitions. Such a partition and its indexes are more easily placed in the memory than the index of the whole table.
+
 When queries or updates are using a large percentage of one partition, the performance may be increased simply through a more beneficial sequential access to this partition on the disk, instead of using the index and random read access for the whole table. In our case the B-Tree (itemid, clock) type of indexes are used that substantially benefit in performance from partitioning.
 Mass INSERT and DELETE can be performed by simply deleting or adding partitions, as long as this possibility is planned for when creating the partition. The ALTER TABLE statement will work much faster than any statement for mass insertion or deletion.
+
 It is not possible to use tablespaces for InnoDB tables in MySQL. You get one directory - one database. Thus, to transfer a table partition file it must by physically copied to another medium and then referenced using a symbolic link.
+
 Note: Starting with MySQL 5.6 there is a possibility of specifying the location of a tablespace. However, there are some limitations.
+
 These benefits usually become apparent only when a table gets very large. Whether a table is going to benefit from partitioning ultimately depends on the application, however, there is a rule of thumb that it will benefit once the size of the table exceeds the memory size of the database server.
 
 Currently MySQL supports partitioning out of the box. Partitioning support starts with the MySQL 5.1 version, so if you have an older version of MySQL you will have to upgrade it. Additionally, MySQL server must be compiled with partitioning support. Whether this support currently exists can be verified with:
@@ -112,19 +116,7 @@ A tutorial for automatic table partitioning follows. There will be partitioning 
 
 |Daily partitioning|Monthly partitioning|
 |------------------|--------------------|
-|history
-history_log
-history_str
-history_text
-history_uint
-|acknowledges
-alerts
-auditlog
-events
-service_alarms
-trends
-trends_uint
-|
+|history history_log history_str history_text history_uint |acknowledges alerts auditlog events service_alarms trends trends_uint|
 
 ### Getting Ready
 
